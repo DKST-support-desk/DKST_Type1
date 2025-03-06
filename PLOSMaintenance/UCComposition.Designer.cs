@@ -1,0 +1,144 @@
+﻿
+namespace PLOSMaintenance
+{
+	partial class UCComposition
+	{
+		/// <summary> 
+		/// 必要なデザイナー変数です。
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
+
+		/// <summary> 
+		/// 使用中のリソースをすべてクリーンアップします。
+		/// </summary>
+		/// <param name="disposing">マネージド リソースを破棄する場合は true を指定し、その他の場合は false を指定します。</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing && (components != null))
+			{
+				components.Dispose();
+			}
+			base.Dispose(disposing);
+		}
+
+		#region コンポーネント デザイナーで生成されたコード
+
+		/// <summary> 
+		/// デザイナー サポートに必要なメソッドです。このメソッドの内容を 
+		/// コード エディターで変更しないでください。
+		/// </summary>
+		private void InitializeComponent()
+		{
+            this.pnlBottom = new System.Windows.Forms.Panel();
+            this.btnRegist = new System.Windows.Forms.Button();
+            this.pnlControl = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.tlPnl = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlBottom.SuspendLayout();
+            this.pnlControl.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // pnlBottom
+            // 
+            this.pnlBottom.Controls.Add(this.btnRegist);
+            this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottom.Location = new System.Drawing.Point(0, 547);
+            this.pnlBottom.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlBottom.Name = "pnlBottom";
+            this.pnlBottom.Size = new System.Drawing.Size(600, 53);
+            this.pnlBottom.TabIndex = 3;
+            // 
+            // btnRegist
+            // 
+            this.btnRegist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnRegist.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnRegist.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnRegist.Location = new System.Drawing.Point(498, 0);
+            this.btnRegist.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegist.Name = "btnRegist";
+            this.btnRegist.Size = new System.Drawing.Size(102, 53);
+            this.btnRegist.TabIndex = 0;
+            this.btnRegist.Text = "登録";
+            this.btnRegist.UseVisualStyleBackColor = false;
+            this.btnRegist.Click += new System.EventHandler(this.btnRegist_Clicked);
+            // 
+            // pnlControl
+            // 
+            this.pnlControl.Controls.Add(this.btnAdd);
+            this.pnlControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlControl.Location = new System.Drawing.Point(0, 504);
+            this.pnlControl.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlControl.Name = "pnlControl";
+            this.pnlControl.Padding = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.pnlControl.Size = new System.Drawing.Size(600, 43);
+            this.pnlControl.TabIndex = 4;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdd.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnAdd.Location = new System.Drawing.Point(7, 8);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(586, 27);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "+";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.OnAddButtonClicked);
+            // 
+            // tlPnl
+            // 
+            this.tlPnl.AutoSize = true;
+            this.tlPnl.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tlPnl.ColumnCount = 1;
+            this.tlPnl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlPnl.Location = new System.Drawing.Point(7, 7);
+            this.tlPnl.MinimumSize = new System.Drawing.Size(200, 200);
+            this.tlPnl.Name = "tlPnl";
+            this.tlPnl.RowCount = 2;
+            this.tlPnl.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlPnl.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlPnl.Size = new System.Drawing.Size(200, 200);
+            this.tlPnl.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.tlPnl);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(4);
+            this.panel1.Size = new System.Drawing.Size(600, 504);
+            this.panel1.TabIndex = 6;
+            // 
+            // UCComposition
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlControl);
+            this.Controls.Add(this.pnlBottom);
+            this.Name = "UCComposition";
+            this.Size = new System.Drawing.Size(600, 600);
+            this.pnlBottom.ResumeLayout(false);
+            this.pnlControl.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+
+		}
+
+		#endregion
+
+		private System.Windows.Forms.Panel pnlBottom;
+		private System.Windows.Forms.Button btnRegist;
+		private System.Windows.Forms.Panel pnlControl;
+		private System.Windows.Forms.Button btnAdd;
+		private System.Windows.Forms.TableLayoutPanel tlPnl;
+		private System.Windows.Forms.Panel panel1;
+	}
+}

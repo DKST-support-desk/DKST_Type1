@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3C693DB-00AD-4E30-93E2-48341C6AAA94}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PLOS.Gui.Core</RootNamespace>
+    <AssemblyName>Gui.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Core.1.1.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAPICodePack-Shell.1.1.1\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FormExpansionImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormExpansionImage.Designer.cs">
+      <DependentUpon>FormExpansionImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FormFixedDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormFixedDialogBase.Designer.cs">
+      <DependentUpon>FormFixedDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FormItemSelectionBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormItemSelectionBase.Designer.cs">
+      <DependentUpon>FormItemSelectionBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FormMainBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormMainBase.designer.cs">
+      <DependentUpon>FormMainBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FormSizableDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormSizableDialogBase.Designer.cs">
+      <DependentUpon>FormSizableDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FormSplashBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormSplashBase.designer.cs">
+      <DependentUpon>FormSplashBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\UCEditableBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\UCEditableBase.Designer.cs">
+      <DependentUpon>UCEditableBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\UCExpansionPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\UCExpansionPictureBox.Designer.cs">
+      <DependentUpon>UCExpansionPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\UCFoldableBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\UCFoldableBase.Designer.cs">
+      <DependentUpon>UCFoldableBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\UCRichMessagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\UCRichMessagePanel.Designer.cs">
+      <DependentUpon>UCRichMessagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\UCBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Base\UCBase.Designer.cs">
+      <DependentUpon>UCBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FormInfoDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormInfoDialogBase.Designer.cs">
+      <DependentUpon>FormInfoDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\AntiAliasLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\AntiAliasLabel.Designer.cs">
+      <DependentUpon>AntiAliasLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\CustumCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\CustumCheckBox.designer.cs">
+      <DependentUpon>CustumCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\DualTitleDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\DualTitleDataGridView.designer.cs">
+      <DependentUpon>DualTitleDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\FormattableNumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\FormattableNumericTextBox.Designer.cs">
+      <DependentUpon>FormattableNumericTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\PageControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\PagePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\PictureBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\PictureBoxEx.Designer.cs">
+      <DependentUpon>PictureBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\PreviewPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\CellBondDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\CellBondDataGridView.Designer.cs">
+      <DependentUpon>CellBondDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\RowControlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\RowControlPanel.Designer.cs">
+      <DependentUpon>RowControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\SeparatorControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\ToggleLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\ToggleLabel.Designer.cs">
+      <DependentUpon>ToggleLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\NumericTextBox.Designer.cs">
+      <DependentUpon>NumericTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\PermitedTextBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\PermitedTextBoxBase.Designer.cs">
+      <DependentUpon>PermitedTextBoxBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\PermitedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\PermitedTextBox.Designer.cs">
+      <DependentUpon>PermitedTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\SplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\SplitButton.designer.cs">
+      <DependentUpon>SplitButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\UACShieldIconButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\UACShieldIconButton.designer.cs">
+      <DependentUpon>UACShieldIconButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\UIntTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\UIntTextBox.designer.cs">
+      <DependentUpon>UIntTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\FormComboListSubstitution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\FormComboListSubstitution.Designer.cs">
+      <DependentUpon>FormComboListSubstitution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\VisualTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\VisualTabControl.Designer.cs">
+      <DependentUpon>VisualTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustumContol\RowControlPanel2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustumContol\RowControlPanel2.Designer.cs">
+      <DependentUpon>RowControlPanel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViews\DataGridViewCellEx.cs" />
+    <Compile Include="DataGridViews\DataGridViewNumericCell.cs" />
+    <Compile Include="DataGridViews\DataGridViewNumericColumn.cs" />
+    <Compile Include="DataGridViews\DataGridViewNumericEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViews\SyncScrollDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EnumDef.cs" />
+    <Compile Include="Extensions\ControlExtension.cs" />
+    <Compile Include="Extensions\DataGridViewExtension.cs" />
+    <Compile Include="Forms\OpenFolderDialog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UACRunElevated.cs" />
+    <Compile Include="UserControls\UCFontSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCFontSelector.Designer.cs">
+      <DependentUpon>UCFontSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinApi.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Base\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormExpansionImage.resx">
+      <DependentUpon>FormExpansionImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormFixedDialogBase.es.resx">
+      <DependentUpon>FormFixedDialogBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormFixedDialogBase.resx">
+      <DependentUpon>FormFixedDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormInfoDialogBase.es.resx">
+      <DependentUpon>FormInfoDialogBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormItemSelectionBase.resx">
+      <DependentUpon>FormItemSelectionBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormSizableDialogBase.es.resx">
+      <DependentUpon>FormSizableDialogBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormSizableDialogBase.resx">
+      <DependentUpon>FormSizableDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormSplashBase.resx">
+      <DependentUpon>FormSplashBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\UCExpansionPictureBox.resx">
+      <DependentUpon>UCExpansionPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\UCFoldableBase.resx">
+      <DependentUpon>UCFoldableBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\UCRichMessagePanel.resx">
+      <DependentUpon>UCRichMessagePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\UCBase.resx">
+      <DependentUpon>UCBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormInfoDialogBase.resx">
+      <DependentUpon>FormInfoDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\FormComboListSubstitution.resx">
+      <DependentUpon>FormComboListSubstitution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustumContol\VisualTabControl.resx">
+      <DependentUpon>VisualTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCFontSelector.resx">
+      <DependentUpon>UCFontSelector.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{6B80A5A7-C967-485F-9CA5-59D9FFF0363A}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ToggleTrueImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToggleFalseImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgAddRow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgDelRow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgUpRow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgDownRow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagePrev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgAddRow_MouseEnter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgDelRow_MouseEnter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgDownRow_MouseEnter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImgUpRow_MouseEnter.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

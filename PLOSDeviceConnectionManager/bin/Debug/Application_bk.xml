@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<ApplicationSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <System>
+    <!-- SQLServer接続認証情報 -->
+    <DbConnect>Data Source=(local);Integrated Security=True;Initial Catalog=PLOS_DB_NEW;</DbConnect>
+    <!-- 定周期タイマーの監視間隔(ミリ秒) -->
+    <TimeInterval>100</TimeInterval>
+    <!-- 稼働シフト情報更新時刻(hh:mm) -->
+    <UpdateShiftInfo>9:00</UpdateShiftInfo>
+    <!-- カメラ最大接続台数 -->
+    <CameraMaxNum>7</CameraMaxNum>
+    <!-- QRリーダ最大接続台数 -->
+    <QrReaderMaxNum>7</QrReaderMaxNum>
+  </System>
+  <WebCam>
+    <!-- 保存フォルダ　現象動画作成用テンポラリデータ -->
+    <TempFilePath>D:\DKST\tempDir</TempFilePath>
+    <!-- 保存フォルダ　サイクルビデオ -->
+    <CycleVideoPath>D:\DKST\cycleDir</CycleVideoPath>
+  </WebCam>
+  <Dio>
+    <!-- DIO接続名称 -->
+    <DeviceName>DIO001</DeviceName>
+    <!-- ブザー鳴動時間(秒) -->
+    <BuzzerRingingTime>10</BuzzerRingingTime>
+  </Dio>
+</ApplicationSetting>

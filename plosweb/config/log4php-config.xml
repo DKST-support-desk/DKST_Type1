@@ -1,0 +1,12 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="default" class="LoggerAppenderDailyFile">
+        <layout class = "LoggerLayoutPattern">
+            <param name = "conversionPattern" value = "%date{Y-m-d H:i:s.u},%-5level,%msg,%file,%line%n" />
+        </layout>
+        <param name="file" value="C:\DKST\Log\web/Log_%s.log" />
+        <param name="datePattern" value="Y_m_d" />
+    </appender>
+    <root>
+        <appender_ref ref="default" />
+    </root>
+</configuration>

@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57EDB357-D727-46E3-A894-4359C958668E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PLOSMaintenance</RootNamespace>
+    <AssemblyName>DKSTMaintenance</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.14.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.14\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Events\CalendarEventArgs.cs" />
+    <Compile Include="Events\Operating_Shift_PatternEventArgs.cs" />
+    <Compile Include="Events\RecodeOperationEventArgs.cs" />
+    <Compile Include="FrmAddComposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddComposition.Designer.cs">
+      <DependentUpon>FrmAddComposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalendar_MultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalendar_MultiSelect.Designer.cs">
+      <DependentUpon>FrmCalendar_MultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalendar_Plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalendar_Plan.Designer.cs">
+      <DependentUpon>FrmCalendar_Plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataCollectionSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataCollectionSetting.Designer.cs">
+      <DependentUpon>FrmDataCollectionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditProductionQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditProductionQuantity.Designer.cs">
+      <DependentUpon>FrmEditProductionQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExclusionClassEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExclusionClassEdit.Designer.cs">
+      <DependentUpon>FrmExclusionClassEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExclusionClassMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExclusionClassMaintenance.Designer.cs">
+      <DependentUpon>FrmExclusionClassMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPasswordChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPasswordChange.Designer.cs">
+      <DependentUpon>FrmPasswordChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIdentifierPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIdentifierPassword.Designer.cs">
+      <DependentUpon>FrmIdentifierPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperatingPattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOperatingPattern.Designer.cs">
+      <DependentUpon>FrmOperatingPattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStandardVal_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStandardVal_Table.Designer.cs">
+      <DependentUpon>FrmStandardVal_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UCComposition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCComposition.Designer.cs">
+      <DependentUpon>UCComposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCCompositionRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCCompositionRow.Designer.cs">
+      <DependentUpon>UCCompositionRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDataCollectionItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDataCollectionItem.Designer.cs">
+      <DependentUpon>UCDataCollectionItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDataCollectionSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDataCollectionSetting.Designer.cs">
+      <DependentUpon>UCDataCollectionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Device_DO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Device_DO.Designer.cs">
+      <DependentUpon>UC_Device_DO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Device_QR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Device_QR.Designer.cs">
+      <DependentUpon>UC_Device_QR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Device_DI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Device_DI.Designer.cs">
+      <DependentUpon>UC_Device_DI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Device_Camera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Device_Camera.Designer.cs">
+      <DependentUpon>UC_Device_Camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCLineInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLineInfo.Designer.cs">
+      <DependentUpon>UCLineInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Day_Plan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Day_Plan.Designer.cs">
+      <DependentUpon>UCOperating_Shift_Calendar_Day_Plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Plan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Plan.Designer.cs">
+      <DependentUpon>UCOperating_Shift_Calendar_Plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Pattern.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Pattern.Designer.cs">
+      <DependentUpon>UCOperating_Shift_Pattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Base.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Base.designer.cs">
+      <DependentUpon>UCOperating_Shift_Calendar_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Day_Base.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Day_Base.Designer.cs">
+      <DependentUpon>UCOperating_Shift_Calendar_Day_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Day_Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Day_Main.Designer.cs">
+      <DependentUpon>UCOperating_Shift_Calendar_Day_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_Main.designer.cs">
+      <DependentUpon>UCOperating_Shift_Calendar_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_MultiSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Calendar_MultiSelect.designer.cs">
+      <DependentUpon>UCOperating_Shift_Calendar_MultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Exclusion_Row.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Exclusion_Row.Designer.cs">
+      <DependentUpon>UCOperating_Shift_Exclusion_Row.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Item.Designer.cs">
+      <DependentUpon>UCOperating_Shift_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProductNumber.cs" />
+    <Compile Include="UCProductNumber.Designer.cs">
+      <DependentUpon>UCProductNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProductType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProductType.Designer.cs">
+      <DependentUpon>UCProductType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProductTypeRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProductTypeRow.Designer.cs">
+      <DependentUpon>UCProductTypeRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Regist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOperating_Shift_Regist.Designer.cs">
+      <DependentUpon>UCOperating_Shift_Regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStandardVal_Table_Composition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStandardVal_Table_Composition.Designer.cs">
+      <DependentUpon>UCStandardVal_Table_Composition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStandardVal_Table_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStandardVal_Table_Item.Designer.cs">
+      <DependentUpon>UCStandardVal_Table_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCWorker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCWorker.Designer.cs">
+      <DependentUpon>UCWorker.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAddComposition.resx">
+      <DependentUpon>FrmAddComposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalendar_MultiSelect.resx">
+      <DependentUpon>FrmCalendar_MultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalendar_Plan.resx">
+      <DependentUpon>FrmCalendar_Plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataCollectionSetting.resx">
+      <DependentUpon>FrmDataCollectionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditProductionQuantity.resx">
+      <DependentUpon>FrmEditProductionQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExclusionClassEdit.resx">
+      <DependentUpon>FrmExclusionClassEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExclusionClassMaintenance.resx">
+      <DependentUpon>FrmExclusionClassMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPasswordChange.resx">
+      <DependentUpon>FrmPasswordChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIdentifierPassword.resx">
+      <DependentUpon>FrmIdentifierPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperatingPattern.resx">
+      <DependentUpon>FrmOperatingPattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStandardVal_Table.resx">
+      <DependentUpon>FrmStandardVal_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCComposition.resx">
+      <DependentUpon>UCComposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCompositionRow.resx">
+      <DependentUpon>UCCompositionRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDataCollectionItem.resx">
+      <DependentUpon>UCDataCollectionItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDataCollectionSetting.resx">
+      <DependentUpon>UCDataCollectionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Device_DO.resx">
+      <DependentUpon>UC_Device_DO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Device_QR.resx">
+      <DependentUpon>UC_Device_QR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Device_DI.resx">
+      <DependentUpon>UC_Device_DI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Device_Camera.resx">
+      <DependentUpon>UC_Device_Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLineInfo.resx">
+      <DependentUpon>UCLineInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Calendar_Day_Plan.resx">
+      <DependentUpon>UCOperating_Shift_Calendar_Day_Plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Pattern.resx">
+      <DependentUpon>UCOperating_Shift_Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Calendar_Base.resx">
+      <DependentUpon>UCOperating_Shift_Calendar_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Calendar_Day_Base.resx">
+      <DependentUpon>UCOperating_Shift_Calendar_Day_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Calendar_Day_Main.resx">
+      <DependentUpon>UCOperating_Shift_Calendar_Day_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Calendar_Main.resx">
+      <DependentUpon>UCOperating_Shift_Calendar_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Calendar_MultiSelect.resx">
+      <DependentUpon>UCOperating_Shift_Calendar_MultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Exclusion_Row.resx">
+      <DependentUpon>UCOperating_Shift_Exclusion_Row.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Item.resx">
+      <DependentUpon>UCOperating_Shift_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProductNumber.resx">
+      <DependentUpon>UCProductNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProductType.resx">
+      <DependentUpon>UCProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProductTypeRow.resx">
+      <DependentUpon>UCProductTypeRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOperating_Shift_Regist.resx">
+      <DependentUpon>UCOperating_Shift_Regist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStandardVal_Table_Composition.resx">
+      <DependentUpon>UCStandardVal_Table_Composition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStandardVal_Table_Item.resx">
+      <DependentUpon>UCStandardVal_Table_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCWorker.resx">
+      <DependentUpon>UCWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{6b80a5a7-c967-485f-9ca5-59d9fff0363a}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBConnect\DBConnect.csproj">
+      <Project>{089e2d83-12bc-4927-8059-7e3a5f8f9c1f}</Project>
+      <Name>DBConnect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gui.Core\Gui.Core.csproj">
+      <Project>{b3c693db-00ad-4e30-93e2-48341c6aaa94}</Project>
+      <Name>Gui.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\削除アイコン.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TriggerType1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TriggerType2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TriggerType3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TriggerType4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TriggerType5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusBad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusGood2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusBad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusGood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\利用中アイコン.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exclusion.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy ..\..\Properties\log4net.config</PreBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,105 @@
+html {
+    font-size: 12px;
+    font-family: 'メイリオ';
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    font-size: 12px;
+}
+
+table th{
+    font-weight: normal;
+}
+
+
+/* DLアイコン https://cssicon.space/#/ */
+.common-download-icon {
+    color: white;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 12px;
+    width: 13px;
+    height: 4px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+    border-top: none;
+}
+
+.common-download-icon:before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -9px;
+    width: 1px;
+    height: 10px;
+    background-color: currentColor;
+}
+  
+.common-download-icon:after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: -4px;
+    width: 4px;
+    height: 4px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+}
+
+/* 矢印アイコン https://css.gg/arrows-expand-right */
+.common-gg-arrows-expand-right {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+    box-shadow:
+    -6px 6px 0 -4px,
+    6px -6px 0 -4px
+}
+   
+.common-gg-arrows-expand-right::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    top: -4px;
+    left: 6px;
+    transform: rotate(45deg);
+    border-top: 9px solid;
+    border-bottom: 9px solid
+} 
+
+.common-gg-arrows-expand-right:hover {
+    cursor: pointer;
+}
+
+/* ヘルプボタン https://www.rectus.co.jp/archives/4545 */
+.common-help-button:after{
+    content: "?";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.4;
+    color: grey;
+    border: solid;
+    font-weight: bold;
+}
+.common-help-button:hover {
+    cursor: pointer;
+}
+
+.common-right-icon{
+    float: right;
+    vertical-align: middle;
+}

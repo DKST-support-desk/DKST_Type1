@@ -1,0 +1,95 @@
+/* メイン部分 */
+button.calendar-button{
+  color: white;
+  background-color: rgb(32, 110, 255);
+  border: none;
+  border-bottom:2px solid rgba(0,0,0,0.2);
+  height: 30px;
+}
+
+button.calendar-button:hover{
+  background-color: rgb(32, 60, 255);
+}
+
+button.calendar-button:active {
+	-webkit-transform: translate(0,2px);
+	-moz-transform: translate(0,2px);
+	transform: translate(0,2px);
+	border-bottom:none;
+}
+
+table .calendar-main-table{
+  width: 450px;
+  border:1px solid black
+}
+
+table td.calendar-main-td{
+  border: 0px none;
+}
+
+table td.calendar-text-left{
+  text-align: left;
+}
+
+div.calendar-area{
+  height: 370px;
+  overflow-y: scroll;
+}
+
+div.calendar-button-area{
+  text-align: right;
+}
+
+/* カレンダー部分 */
+table.calendar-table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+   
+table th.calendar-th{
+border:1px solid rgb(124, 196, 255);
+text-align:center;
+height: 18px;
+}
+   
+table td.calendar-td{
+border:1px solid rgb(124, 196, 255);
+text-align:center;
+height: 26px;
+}
+
+table td.calendar-no-target-color{
+  background-color: lightgray;
+}
+
+table td.calendar-plan-exists-color{
+  background-color: white;
+}
+
+/* table td.calendar-no-target-color:disabled{
+  background-color: lightgray;
+} */
+
+/* table td.calendar-radio-off-color{
+  background-color: rgb(255, 180, 80);
+} */
+
+table td.calendar-radio-off-color{
+  background-color: rgb(255, 180, 80);
+}
+
+table td.calendar-radio-on-color{
+  color: white;
+  background-color: rgb(32, 110, 255);
+}
+
+div.calendar-title{
+  text-align: center;
+}
+
+p.new-line{
+  height: 12px;
+  margin: 0px
+}

@@ -1,0 +1,192 @@
+/* #region button */
+
+button.video-menu{
+  color: white;
+  background-color: rgb(32, 110, 255);
+  border: none;
+  border-bottom:2px solid rgba(0,0,0,0.2);
+  height: 20px;
+  vertical-align: top;
+}
+
+button.video-menu:hover{
+  background-color: rgb(32, 60, 255);
+}
+
+button.video-menu:enabled:active {
+  -webkit-transform: translate(0,2px);
+  -moz-transform: translate(0,2px);
+  transform: translate(0,2px);
+  border-bottom:none;
+}
+
+button.video-menu:disabled{
+  color: white;
+  background-color: rgb(185, 210, 255);
+  border: none;
+  height: 20px;
+  vertical-align: top;
+}
+
+/* #endregion button */
+
+video.video-movie{
+  width: 100%;
+  height: 365px;
+  min-width: 520px;
+}
+
+video.video-movie-big{
+  width: 100%;
+  height: 88.5vh;
+  min-width: 520px;
+  min-height: 550px;
+}
+
+div.video-movie-area{
+  width: 100%;
+  text-align: center;
+}
+
+.video-span{
+  width: 270px;
+}
+
+.video-combo {
+  height: 20px;
+  width: 100px;
+}
+
+.video-on-off-icon{
+  width: 70px;
+}
+
+.video-center{
+  text-align: center;
+}
+
+.video-icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-movie-button{
+  /* width: px; */
+  height: 25px;
+  vertical-align: top;
+}
+
+.video-frame-button{
+  width: 40px;
+  height: 25px;
+  vertical-align: top;
+}
+
+.video-button-icon{
+  height: 15px;
+  width: 15px;
+}
+
+table.video-table{
+  margin: 3px auto;
+}
+
+td.video-td{
+  border:1px solid black;
+}
+
+/* なぜかサイクルプロットの領域を使いだすので、最大高さを設定して防止する */
+.video-div{
+  max-height: 360px;
+}
+
+.video-movie-speed-box{
+  width: 45px;
+  height: 25px;
+}
+
+div.video-play-time-area{
+  height: 25px;
+  vertical-align: middle;
+  display: table
+}
+
+/* #region 動画再生バー　https://webdesignfacts.net/entry/range-slider-css/#gsc.tab=0 */
+
+input.video-movie-scroll[type="range"] { 
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 10px;
+  width: 100%;
+  /* width: 200px; */
+  cursor: pointer;
+  border-radius: 0; /* iOS */
+}
+
+input.video-movie-scroll[type="range"]::-webkit-slider-runnable-track{
+  background: #ddd;
+}
+
+/*
+* 1. Set to 0 width and remove border for a slider without a thumb
+* 2. Shadow is the negative the full width of the input and has a spread 
+*    of the width of the input.
+*/
+input.video-movie-scroll[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 20px; /* 1 */
+  height: 10px;
+  background: #fff;
+  box-shadow: -2000px 0 0 2000px dodgerblue; /* 2 */
+  border: 2px solid #999; /* 1 */
+}
+
+input.video-movie-scroll[type="range"]::-moz-range-track{
+  height: 10px;
+  background: #ddd;
+}
+
+input.video-movie-scroll[type="range"]::-moz-range-thumb{
+  background: #fff;
+  height: 10px;
+  width: 20px;
+  border: 3px solid #999;
+  border-radius: 0 !important;
+  box-shadow: -100vw 0 0 100vw dodgerblue;
+  box-sizing: border-box;
+}
+
+input.video-movie-scroll[type="range"]::-ms-fill-lower{ 
+  background: dodgerblue;
+}
+
+input.video-movie-scroll[type="range"]::-ms-thumb{ 
+  background: #fff;
+  border: 2px solid #999;
+  height: 10px;
+  width: 20px;
+  box-sizing: border-box;
+}
+
+input.video-movie-scroll[type="range"]::-ms-ticks-after{ 
+  display: none; 
+}
+
+input.video-movie-scroll[type="range"]::-ms-ticks-before{ 
+  display: none; 
+}
+
+input.video-movie-scroll[type="range"]::-ms-track{ 
+  background: #ddd;
+  color: transparent;
+  height: 10px;
+  border: none;
+}
+
+input.video-movie-scroll[type="range"]::-ms-tooltip{ 
+  display: none;
+}
+/* #endregion 動画再生バー */

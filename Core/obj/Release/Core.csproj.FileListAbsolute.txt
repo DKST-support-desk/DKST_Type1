@@ -1,0 +1,12 @@
+D:\00_Project\明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\bin\Release\Core.dll
+D:\00_Project\明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\bin\Release\Core.pdb
+D:\00_Project\明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\obj\Release\Core.csproj.CoreCompileInputs.cache
+D:\00_Project\明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\obj\Release\Core.dll
+D:\00_Project\明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\obj\Release\Core.pdb
+D:\00_Project\明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\obj\Release\Core.csproj.AssemblyReference.cache
+D:\00_Project\05_明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\bin\Release\Core.dll
+D:\00_Project\05_明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\bin\Release\Core.pdb
+D:\00_Project\05_明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\obj\Release\Core.csproj.CoreCompileInputs.cache
+D:\00_Project\05_明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\obj\Release\Core.dll
+D:\00_Project\05_明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\obj\Release\Core.pdb
+D:\00_Project\05_明治電機\01_DENSO西尾_DKST手組\01_Src\SVNRepo\Core\obj\Release\Core.csproj.AssemblyReference.cache

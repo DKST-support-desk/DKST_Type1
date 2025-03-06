@@ -1,0 +1,294 @@
+/* #region table */
+table.pile-table{
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+  
+table.pile-worker-table{
+  border-collapse: collapse;
+  width: 150px;
+  table-layout: fixed;
+}
+/* #endregion table */
+
+/* #region th */
+
+table th.pile-item-name-th {
+  text-align:left;
+  border:1px solid black;
+}
+
+table th.pile-top-header{
+  width: 144px;
+  min-width: 144px;
+  max-width: 144px;
+}
+
+table th.pile-th{
+  border:1px solid black;
+  text-align:center;
+}
+
+table th.pile-tail-header{
+  text-align: left;
+}
+
+table th.pile-neck-color {
+  background-color: rgb(255, 235, 255);
+}
+
+/* #endregion th */
+
+/* #region tr */
+table tr.pile-plan {
+  background-color: rgb(236, 236, 236);
+}
+  
+table tr.pile-actual {
+  background-color: lightyellow;
+}
+/* #endregion tr */
+   
+/* #region td */
+table td.pile-td{
+  border:1px solid black;
+  text-align:center;
+}
+
+table td.pile-head{
+  text-align:left;
+  width: 14%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 0px solid black;  
+}
+
+table td.pile-tail{
+  width: 3%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 0px solid black;
+  border-right: 0px solid black;  
+}
+
+table td.pile-first {
+  width: 70%;
+  border:1px solid black;
+  text-align:center;
+}
+
+table td.pile-plan {
+  background-color: rgb(236, 236, 236);
+  text-align: right;
+  border:1px solid black;
+}
+
+table td.pile-actual {
+  background-color: lightyellow;
+  text-align: right;
+  border:1px solid black;
+}
+  
+table td.pile-item-name {
+  text-align:left;
+  border:1px solid black;
+}
+
+table td.pile-graph-left{
+  width: 90px;
+  border: 0px solid black;
+  border-style: none;
+  text-align: center;
+}
+
+table td.pile-grapf-right{
+  height: 260px;
+  border: 0px solid black;
+  border-style: none;
+}
+
+table td.pile-header{
+  width: 14%;
+}
+
+table td.pile-td-include-table{
+  padding: 0px;
+}
+
+table td.pile-mct-column-left{
+  width: 50%;
+  border-right: 1px solid black;
+  text-align:left;
+}
+
+table td.pile-mct-column-right{
+  width: 50%;
+  background-color: rgb(236, 236, 236);
+  text-align: right;
+}
+
+table td.pile-ct-calcu-left {
+  width: 50%;
+  text-align: right;
+  border-right: 1px solid black;
+}
+
+table td.pile-ct-calcu-right {
+  width: 50%;
+  text-align: right;
+}
+
+table td.pile-calcu {
+  text-align: right;
+  border:1px solid black;
+}
+
+table td.pile-ct-actual{
+  width: 50%;
+  background-color: lightyellow;
+  text-align: right;
+  border-right: 1px solid black;
+}
+
+table td.pile-ct-plan{
+  width: 50%;
+  background-color: rgb(236, 236, 236);
+  text-align: right;
+}
+
+table td.pile-worker-table-td {
+  border:1px solid black;
+  text-align:left;
+}
+
+table td.pile-worker-select-td {
+  background-color: rgb(255, 180, 80);
+}
+
+/* 作業者行だけ高さをあげておかないと作業者名が入った際に高さが変わる */
+table td.pile-24-height{
+  height: 24px;
+}
+
+/* #endregion td */
+
+/* #region hr */
+hr.pile-tt-line {
+  background-color: rgb(255,0,0);
+  height: 6px;
+  border: none;
+}
+
+hr.pile-pitch-line {
+  background-color: rgb(0,176,80);
+  height: 6px;
+  border: none;
+}
+
+hr.pile-weight-line {
+  background-color: rgb(0,0,255);
+  height: 6px;
+  border: none;
+}
+
+hr.pile-single-line {
+  background-color: rgb(0,204,255);
+  height: 6px;
+  border: none;
+}
+/* #endregion hr */
+
+/* #region select */
+select.pile-disp-option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  outline: none;
+  padding: 0;
+  background: transparent;
+  text-align: center;
+}
+
+/* #endregion select */
+
+/* #region input */
+
+input.pile-span{
+  width: 160px;
+}
+
+input.pile-grapf-input{
+  width: 70px;
+}
+
+input.pile-graph-disp-num{
+  width: 50px;
+}
+
+/* #endregion input */
+
+/* #region button */
+
+button.pile-worker-button {
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+
+/* #endregion button */
+
+/* #region div */
+
+div.pile-centor-div{
+  text-align: center;
+}
+
+div.pile-worker-dropdown-div{
+  height: 150px;
+}
+
+/* #endregion div */
+
+/* #region svg */
+
+svg.pile-graph{
+  height: 260px;
+  width: 100%;
+}
+
+/* #endregion svg */
+
+.pile-combo {
+  height: 20px;
+  width: 100px;
+}
+
+/* #region 勤帯ドロップダウン */
+table.pile-shift-table{
+  border-collapse: collapse;
+  width: 150px;
+  table-layout: fixed;
+}
+
+table td.pile-shift-table-td {
+  border:1px solid black;
+  text-align:left;
+}
+
+table td.pile-shift-select-td {
+  background-color: rgb(255, 180, 80);
+}
+  
+div.pile-shift-dropdown-div{
+  height: 150px;
+}
+
+.pile-ps-bar-class{
+  cursor: pointer;
+}
+/* #endregion 勤帯ドロップダウン */

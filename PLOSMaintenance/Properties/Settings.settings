@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PLOSMaintenance.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IdentifierPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DENSO</Value>
+    </Setting>
+    <Setting Name="CameraID_0" Type="System.Guid" Scope="Application">
+      <Value Profile="(Default)">fd5001e9-010a-42d0-8649-6f3b63e71b25</Value>
+    </Setting>
+    <Setting Name="CameraID_1" Type="System.Guid" Scope="Application">
+      <Value Profile="(Default)">fd5001e9-010a-42d0-8649-6f3b63e71111</Value>
+    </Setting>
+    <Setting Name="CameraID_2" Type="System.Guid" Scope="Application">
+      <Value Profile="(Default)">fd5001e9-010a-42d0-8649-6f3b63e71b33</Value>
+    </Setting>
+    <Setting Name="CameraID_3" Type="System.Guid" Scope="Application">
+      <Value Profile="(Default)">00000000-0000-0000-0103-000000000003</Value>
+    </Setting>
+    <Setting Name="CameraID_4" Type="System.Guid" Scope="Application">
+      <Value Profile="(Default)">00000000-0000-0000-0103-000000000004</Value>
+    </Setting>
+    <Setting Name="CameraID_5" Type="System.Guid" Scope="Application">
+      <Value Profile="(Default)">00000000-0000-0000-0103-000000000005</Value>
+    </Setting>
+    <Setting Name="CameraID_6" Type="System.Guid" Scope="Application">
+      <Value Profile="(Default)">00000000-0000-0000-0103-000000000006</Value>
+    </Setting>
+    <Setting Name="ConnectionString_New" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;Integrated Security=True;Initial Catalog=PLOS_DB_NEW;</Value>
+    </Setting>
+    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=.\SQLEXPRESS;Integrated Security=True;Initial Catalog=PLOS_DB;</Value>
+    </Setting>
+    <Setting Name="ScreenWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1366</Value>
+    </Setting>
+    <Setting Name="ScreenHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">768</Value>
+    </Setting>
+    <Setting Name="VideoFileMaxCnt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

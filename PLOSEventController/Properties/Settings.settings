@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PLOSEventController.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=(local);Integrated Security=True;Initial Catalog=PLOS_DB;</Value>
+    </Setting>
+    <Setting Name="VideoRetrievalServiceUriStr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">net.tcp://localhost:7000/vrs</Value>
+    </Setting>
+    <Setting Name="EventControllerUriStr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">net.tcp://localhost:8080/PLOSEventService</Value>
+    </Setting>
+    <Setting Name="DioServiceUriStr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">net.tcp://localhost:7001/dioservice</Value>
+    </Setting>
+    <Setting Name="WebcamServiceUriStr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">net.tcp://localhost:8000/webcamservice</Value>
+    </Setting>
+    <Setting Name="QROKPortNo" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="QROKDelayMs" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="CycleVideoMarginMinutes" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="RawVideoSecond" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="MonitoringTimerInterval" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="CycleVideoPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\CycleVideo</Value>
+    </Setting>
+    <Setting Name="RowVideoPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PLOS\Videos</Value>
+    </Setting>
+    <Setting Name="QRNGPortNo" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="QRNGDelayMs" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="QRAssignPortDelayMs" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
