@@ -8,7 +8,7 @@ DKST Type1
 - **OS**: Windows 10以降
 
 ## 依存関係
-このプロジェクトが動作するために必要なソフトウェアやライブラリをリストアップします。
+このプロジェクトが動作するために必要なソフトウェアやライブラリをリストアップします  
 [1. SQL Server Management Studio (SSMS)（Must）](https://learn.microsoft.com/ja-jp/ssms/download-sql-server-management-studio-ssms)  
 [2. PHP（Must）](https://github.com/php/php-src)  
 [3. API-DIO(WDM) Ver.9.50（Must）](https://www.contec.com/jp/products-services/daq-control/pc-helper/daq-software/api-dio%28wdm%29/support/)  
